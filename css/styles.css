@@ -110,6 +110,7 @@ nav h1 a {
   background-color: #3397DB;
   align-items: center;
   padding-top: 8px; 
+  text-align: center;
 }
 .filter-options h2 {
   color: white;
@@ -117,6 +118,7 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+
 }
 .filter-options select {
   background-color: white;
@@ -278,3 +280,6 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* ====================== MEDIA QUERIES ====================== */
+
