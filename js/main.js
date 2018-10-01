@@ -213,16 +213,13 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 /**
 * -----------SERVICE WORKER-----------------
 */
-
-
 if(navigator.serviceWorker){
   // delay registration until after the load event fires on window
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(){
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').then(() => {
       console.log("wohooo registered sw");
-    }).catch(function(error){
+    }).catch(error => {
       console.log(':( failed,', error)
-    });;
+    });
   });
 }
-
