@@ -218,7 +218,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 if(navigator.serviceWorker){
   // delay registration until after the load event fires on window
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('js/sw.js').then(function(){
+    navigator.serviceWorker.register('/sw.js').then(function(){
       console.log("wohooo registered sw");
     }).catch(function(error){
       console.log(':( failed,', error)
