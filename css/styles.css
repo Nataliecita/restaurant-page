@@ -204,6 +204,12 @@ nav h1 a {
   text-transform: uppercase;
 }
 
+.text-area {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  text-align: center;
+}
+
 /* ====================== Restaurant Details ====================== */
 .inside header {
   position: fixed;
