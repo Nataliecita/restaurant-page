@@ -72,12 +72,13 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 10px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    /*width: calc(50% - 80px);*/
+    max-width: 100%
 }
 
 /* Display list items side by side */
@@ -114,7 +115,7 @@ nav h1 a {
   width: 100%;
   height: auto;
   background-color: #3397DB;
-  align-items: center;
+  /*align-items: center; seems like it's not necessary because of text:align*/
   padding-top: 8px; 
   text-align: center;
 }
@@ -130,7 +131,7 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 11pt;
+  font-size: 13px;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
