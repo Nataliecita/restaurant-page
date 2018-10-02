@@ -66,7 +66,7 @@ nav h1 {
 }
 nav h1 a {
   color: #fff;
-  font-size: 14pt;
+  font-size: 16px;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -211,6 +211,12 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+
+body .inside{
+  display: flex;
+  flex-direction: column;
+}
+
 .inside header {
   position: fixed;
   top: 0;
@@ -219,21 +225,21 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
-}
-.inside #map {
-  background-color: #ccc;
-  height: 100%;
+/*  height: 87%;
+  position: fixed;*/
+/*  right: 0;*/
+/*  top: 80px;*/
   width: 100%;
 }
+.inside #map {
+  /*background-color: #ccc;*/
+  /*height: 100%;*/
+  /*width: 100%;*/
+}
 .inside #footer {
-  bottom: 0;
+/*  bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 50%;*/
 }
 #restaurant-name {
   color: #f18200;
@@ -246,7 +252,19 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 90%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 30px;
+/*  height: auto;*/
+  /*margin: auto;*/
+  /*  width: 100%;
+
+  max-width: 100%;
+  height: auto;
+  min-width: 100%;*/
 }
 #restaurant-address {
   font-size: 12pt;
@@ -262,13 +280,20 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: auto;
 }
 #restaurant-container, #reviews-container {
+/*  display: flex;
+  flex: column;
+  justify-content: center;*/
+
+
+
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 40px;
+  /*width: 50%;*/
+  width: 100%
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -301,7 +326,6 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
-
 /* ====================== MEDIA QUERIES ====================== */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 361px) {
@@ -310,10 +334,24 @@ nav h1 a {
     }
 }
 
+
+@media only screen and (max-width: 451px) {
+    #restaurants-list li {
+      max-width: 100%;
+    }
+    #breadcrumb {
+      margin-top: -30px;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #restaurants-list li {
       max-width: 50%;
+    }
+
+    #restaurant-img {
+      max-width: 500px
     }
 }
 
@@ -322,16 +360,9 @@ nav h1 a {
     #restaurants-list li {
       max-width: 320px;
     }
+    #restaurant-img {
+      max-width: 600px
+    }
 } 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .example {background: orange;}
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .example {background: pink;}
-}
 
 /*questions: Need help with a smoother transition bettwen the sizes of the restaurant pictures in the index.html page. There's an odd change when I enlarge the screen
