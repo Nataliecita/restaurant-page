@@ -234,7 +234,7 @@ body .inside{
 .inside #map {
   /*background-color: #ccc;*/
   /*height: 100%;*/
-  width: 100%;
+  width: %;
 }
 .inside #footer {
 /*  bottom: 0;
@@ -252,7 +252,18 @@ body .inside{
   line-height: 1.1;
 }
 #restaurant-img {
-  width: 100%;
+
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+  width: 80%;
+/*  height: auto;*/
+  /*margin: auto;*/
+  /*  width: 100%;
+
+  max-width: 100%;
+  height: auto;
+  min-width: 100%;*/
 }
 #restaurant-address {
   font-size: 12pt;
@@ -332,12 +343,21 @@ body .inside{
     #restaurants-list li {
       max-width: 50%;
     }
+
+    #restaurant-img {
+      max-width: 500px
+    }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #restaurants-list li {
       max-width: 320px;
+    }
+    #restaurant-img {
+      max-width: 600px
     }
 } 
 
