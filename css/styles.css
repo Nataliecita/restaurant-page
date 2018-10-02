@@ -232,9 +232,9 @@ body .inside{
   width: 100%;
 }
 .inside #map {
-/*  background-color: #ccc;
-  height: 100%;
-  width: 100%;*/
+  /*background-color: #ccc;*/
+  /*height: 100%;*/
+  width: 100%;
 }
 .inside #footer {
 /*  bottom: 0;
@@ -255,11 +255,11 @@ body .inside{
   width: 100%;
 }
 #restaurant-address {
-/*  font-size: 12pt;
-  margin: 10px 0px;*/
+  font-size: 12pt;
+  margin: 10px 0px;
 }
 #restaurant-cuisine {
-/*  background-color: #333;
+  background-color: #333;
   color: #ddd;
   font-size: 12pt;
   font-weight: 300;
@@ -268,13 +268,14 @@ body .inside{
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-  width: 90%;*/
+  width: auto;
 }
 #restaurant-container, #reviews-container {
 /*  border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;*/
+  width: 100%
 }
 #reviews-container {
 /*  padding: 30px 40px 80px;*/
@@ -314,16 +315,15 @@ body .inside{
       max-width: 100%;
     }
 
-    nav h1 a {
-    font-size: 1.0rem;
-    letter-spacing: 4px;
-    }
 }
 
 
-@media only screen and (max-width: 436px) {
+@media only screen and (max-width: 451px) {
     #restaurants-list li {
       max-width: 100%;
+    }
+    #breadcrumb {
+      margin-top: -30px;
     }
 }
 
