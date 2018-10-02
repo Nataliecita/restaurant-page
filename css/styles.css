@@ -159,10 +159,12 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  /*perhaps look over this padding*/
+  /*padding: 0 30px 25px;*/
+  padding: 15px 5px 0px;
   text-align: left;
-  width: 90%;
-  max-width: 360px;
+  min-width: 270px;
+  max-width: 300px;
   /* So in desktop they can stack*/
   /*max-width: 300px;*/
 }
