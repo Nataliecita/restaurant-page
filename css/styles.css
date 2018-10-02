@@ -306,14 +306,14 @@ nav h1 a {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #restaurants-list li {
-      max-width: 40%;
+      max-width: 50%;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #restaurants-list li {
-      max-width: 280px;
+      max-width: 320px;
     }
 } 
 
@@ -327,4 +327,4 @@ nav h1 a {
     .example {background: pink;}
 }
 
-/*questions: How can I center the images on the index page for different sizes, I tried using margin auto but the right always had a bit more space than the left. for example when it is set for an iPad*/
+/*questions: Need help with a smoother transition bettwen the sizes of the restaurant pictures in the index.html page. There's an odd change when I enlarge the screen
